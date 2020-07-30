@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linked Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Linked Secondary CSS-->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <title>
+        Responsive Portfolio: Gallery
+    </title>
+</head>
+
+<body>
+    <!--Navigational Bar linking to all pages-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <!--Title always linking to home (About Me) page-->
+        <a class="navbar-brand" href="index.html">Jordan Triplett</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Other navbar options-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <!--Link directing back to the top of this (current) About Me page-->
+                <a class="nav-item nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
+                <!--Link directing to the Portfolio page-->
+                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                <!--Link directing to the Contact page-->
+                <a class="nav-item nav-link active" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Grid Container-->
+    <div class="container bg-light w-auto full-page pb-5">
+        <div class="row bg-light w-auto">
+            <div class="col-md-1">
+                <!--Empty Space-->
+            </div>
+            <div class="col-md-8 mt-5 card">
+                <div class="card-body">
+                    <!--"Contact" titled-->
+                    <h1 class="text-primary">
+                        Contact
+                    </h1>
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Name</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+            </div>
+            <div class="col-md-3">
+                <!--Blank Space-->
+            </div>
+        </div>
+    </div>
+    <footer class="mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">&copy; Copyright Jordan Triplett 2020</span>
+        </div>
+    </footer>
+</body>
+
+</html>
